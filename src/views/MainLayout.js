@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-import NavbarInstance from '../components/NavbarInstance';
+import NavbarInstance from '../components/Navbar';
 
 class MainLayout extends Component {
   render() {
