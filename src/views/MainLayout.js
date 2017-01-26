@@ -5,13 +5,11 @@ import NavbarInstance from '../components/Navbar';
 class MainLayout extends Component {
   render() {
     return (
-      <div className="main-layout">
-        <header>Header</header>
+      <div className="container-fluid">
         <NavbarInstance />
         <main>
           {this.props.children}
         </main>
-        <footer>Footer</footer>
       </div>
     );
   }
