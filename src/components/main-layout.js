@@ -5,9 +5,13 @@ class MainLayout extends Component {
   render() {
     return (
       <div className="main-layout">
-        Main Layout
+        <header>Header</header>
+        <main>
+          {this.props.children}
+        </main>
+        <footer>Footer</footer>
       </div>
-    )
+    );
   }
 }
 
