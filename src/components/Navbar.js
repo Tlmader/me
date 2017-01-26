@@ -12,6 +12,9 @@ class NavbarInstance extends Component {
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav>
+            <LinkContainer to="/about">
+              <NavItem>About</NavItem>
+            </LinkContainer>
             <LinkContainer to="/projects">
               <NavItem>Projects</NavItem>
             </LinkContainer>
