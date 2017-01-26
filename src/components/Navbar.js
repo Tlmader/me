@@ -23,8 +23,8 @@ class NavbarInstance extends Component {
             </LinkContainer>
           </Nav>
           <Nav pullRight>
-            <NavItem eventKey={1} href="#">Link Right</NavItem>
-            <NavItem eventKey={2} href="#">Link Right</NavItem>
+            <NavItem href="https://github.com/tlmader">GitHub</NavItem>
+            <NavItem href="#">Link Right</NavItem>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

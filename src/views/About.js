@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Photos extends Component {
+class About extends Component {
   render() {
     return (
       <div className="about-page">
