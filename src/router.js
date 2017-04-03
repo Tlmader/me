@@ -1,5 +1,5 @@
 import React from 'react'
-import { Router, Route, browserHistory } from 'react-router';
+import { Router, Route, hashHistory } from 'react-router';
 
 import MainLayout from './views/MainLayout';
 import Home from './views/Home';
@@ -8,7 +8,7 @@ import Projects from './views/Projects';
 import Photos from './views/Photos';
 
 export default (
-  <Router history={browserHistory}>
+  <Router history={hashHistory}>
     <Route component={MainLayout}>
       <Route path="/" component={Home} />
       <Route path="/about" component={About} />
