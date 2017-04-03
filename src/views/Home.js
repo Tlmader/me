@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import { Jumbotron } from 'react-bootstrap';
+import JumbotronInstance from '../components/Jumbotron';
 
 class Home extends Component {
   render() {
     return (
       <div className="home-page">
-        <Jumbotron>
-          <h1>Hello, world!</h1>
-          <p>My name is Ted. I live in New Orleans and build software.</p>
-        </Jumbotron>
+        <JumbotronInstance
+          header="Hello, world!"
+          description="My name is Ted. I live in New Orleans and build software." />
       </div>
     );
   }

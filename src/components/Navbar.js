@@ -9,7 +9,8 @@ class NavbarInstance extends Component {
     return (
       <Navbar inverse collapseOnSelect>
         <Navbar.Header>
-          <Link to="/" className="navbar-brand">Tlmader</Link>
+          <Link to="/" className="navbar-brand">tlmader</Link>
+          <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav>
