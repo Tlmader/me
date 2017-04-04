@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import NavbarInstance from '../components/Navbar';
-import { Grid, Row, Col } from 'react-bootstrap';
 
 class MainLayout extends Component {
   render() {

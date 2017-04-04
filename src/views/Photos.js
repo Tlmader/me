@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Grid, Row, Col, Thumbnail } from 'react-bootstrap';
 import JumbotronInstance from '../components/Jumbotron';
 
-class Photos extends Component {
+export default class Photos extends Component {
   render() {
     return (
       <div className="photos-page">
@@ -10,9 +10,9 @@ class Photos extends Component {
           header="Photos" />
         <Grid>
           <Row>
-            {images.map(image => (
+            {photos.map(photo => (
               <Col xs={6} md={3}>
-                <Thumbnail src={image.src} alt="Photo" />
+                <Thumbnail src={photo.thumbnail} alt="Thumbnail" />
               </Col>
             ))}
           </Row>
@@ -22,16 +22,13 @@ class Photos extends Component {
   }
 }
 
-const images = [
-  { src: 'https://react-bootstrap.github.io/assets/thumbnail.png' },
-  { src: 'https://react-bootstrap.github.io/assets/thumbnail.png' },
-  { src: 'https://react-bootstrap.github.io/assets/thumbnail.png' },
-  { src: 'https://react-bootstrap.github.io/assets/thumbnail.png' },
-  { src: 'https://react-bootstrap.github.io/assets/thumbnail.png' },
-  { src: 'https://react-bootstrap.github.io/assets/thumbnail.png' },
-  { src: 'https://react-bootstrap.github.io/assets/thumbnail.png' },
-  { src: 'https://react-bootstrap.github.io/assets/thumbnail.png' },
-  { src: 'https://react-bootstrap.github.io/assets/thumbnail.png' }
+const photos = [
+  { thumbnail: 'https://react-bootstrap.github.io/assets/thumbnail.png' },
+  { thumbnail: 'https://react-bootstrap.github.io/assets/thumbnail.png' },
+  { thumbnail: 'https://react-bootstrap.github.io/assets/thumbnail.png' },
+  { thumbnail: 'https://react-bootstrap.github.io/assets/thumbnail.png' },
+  { thumbnail: 'https://react-bootstrap.github.io/assets/thumbnail.png' },
+  { thumbnail: 'https://react-bootstrap.github.io/assets/thumbnail.png' },
+  { thumbnail: 'https://react-bootstrap.github.io/assets/thumbnail.png' },
+  { thumbnail: 'https://react-bootstrap.github.io/assets/thumbnail.png' }
 ];
-
-export default Photos;

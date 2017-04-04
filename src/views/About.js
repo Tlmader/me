@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import JumbotronInstance from '../components/Jumbotron';
 
 class About extends Component {
   render() {
     return (
       <div className="about-page">
-        <h1>About</h1>
+        <JumbotronInstance
+          header="About" />
       </div>
     );
   }
