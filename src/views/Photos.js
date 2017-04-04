@@ -18,7 +18,8 @@ export default class Photos extends Component {
     return (
       <div className="photos-page">
         <JumbotronInstance
-          header="Photos" />
+          header="Photos"
+          description="Under construction!" />
         <Grid>
           <Row>
             {photos.map((photo, i) => (
