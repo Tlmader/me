@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Grid } from 'react-bootstrap';
 import JumbotronInstance from "../components/Jumbotron";
-import InfoPanel from "../components/InfoPanel";
+import ProjectPanel from "../components/ProjectPanel";
 import { projects } from "../data/projects";
 
 export default class Projects extends Component {
@@ -13,7 +13,7 @@ export default class Projects extends Component {
           description="Check out these fun things I've worked on!"/>
         <Grid>
           {projects.map((project, i) => (
-            <InfoPanel project={project} key={i} />
+            <ProjectPanel project={project} key={i} />
           ))}
         </Grid>
       </div>
