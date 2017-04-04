@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Panel, Row, Col, ListGroup, ListGroupItem } from 'react-bootstrap';
+import { Panel } from 'react-bootstrap';
 
 export default class AboutPanel extends Component {
 
@@ -11,10 +11,8 @@ export default class AboutPanel extends Component {
       <a href={this.props.about.linkTo}>{this.props.about.linkLabel}</a>
     );
     return (
-      <Panel header={header} footer={footer} bsStyle="primary">
-        <Row>
-          {this.props.about.content}
-        </Row>
+      <Panel header={header} footer={footer} bsStyle="info">
+        {this.props.about.content}
       </Panel>
     );
   }
