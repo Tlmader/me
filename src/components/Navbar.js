@@ -13,7 +13,9 @@ const links = [
 
 const externals = [
   { to: 'https://github.com/tlmader', label: 'GitHub' },
-  { to: 'https://www.linkedin.com/in/tlmader/', label: 'LinkedIn' }
+  { to: 'https://www.linkedin.com/in/tlmader/', label: 'LinkedIn' },
+  { to: 'https://www.pinterest.com/tlmader/', label: 'Pinterest' },
+  { to: 'http://steamcommunity.com/id/tlmader/', label: 'Steam' }
 ];
 
 export default class NavbarInstance extends Component {

@@ -10,7 +10,7 @@ export default class Home extends Component {
           header="Hello, world!"
           description="My name is Ted. I live in New Orleans and build software!"/>
         <Grid>
-          <Panel> I study computer science and game development at the University of New Orleans and develop software for
+          <Panel header="About Me" bsStyle="primary"> I study computer science and game development at the University of New Orleans and develop software for
             GE Digital. PC gaming, electronic music, and men's fashion are my hobbies, and I enjoy discovering places
             and learning new things.</Panel>
         </Grid>
