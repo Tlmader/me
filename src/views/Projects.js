@@ -13,7 +13,7 @@ export default class Projects extends Component {
           description="Check out these fun things I've worked on!"/>
         <Grid>
           {projects.map((project, i) => (
-            <InfoPanel project={project} />
+            <InfoPanel project={project} key={i} />
           ))}
         </Grid>
       </div>

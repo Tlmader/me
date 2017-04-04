@@ -5,7 +5,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 import NavLink from './NavLink';
 
 const links = [
-  { to: '/about', label: 'About' },
+  { to: '/', label: 'Home' },
   { to: '/music', label: 'Music' },
   { to: '/projects', label: 'Projects' },
   { to: '/photos', label: 'Photos' }
