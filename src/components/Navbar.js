@@ -4,33 +4,6 @@ import { Link } from 'react-router';
 import { LinkContainer } from 'react-router-bootstrap';
 import NavLink from './NavLink';
 
-class NavbarInstance extends Component {
-  render() {
-    return (
-      <Navbar inverse collapseOnSelect>
-        <Navbar.Header>
-          <Link to="/" className="navbar-brand">tlmader</Link>
-          <Navbar.Toggle />
-        </Navbar.Header>
-        <Navbar.Collapse>
-          <Nav>
-            {links.map(link => (
-              <LinkContainer to={link.to}>
-                <NavItem>{link.label}</NavItem>
-              </LinkContainer>
-            ))}
-          </Nav>
-          <Nav pullRight>
-            {externals.map(external => (
-              <NavLink href={external.to} label={external.label} />
-            ))}
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
-    );
-  }
-}
-
 const links = [
   { to: '/about', label: 'About' },
   { to: '/projects', label: 'Projects' },
@@ -41,5 +14,32 @@ const externals = [
   { to: 'https://github.com/tlmader', label: 'GitHub' },
   { to: 'https://www.linkedin.com/in/tlmader/', label: 'LinkedIn' }
 ];
+
+class NavbarInstance extends Component {
+  render() {
+    return (
+      <Navbar inverse collapseOnSelect>
+        <Navbar.Header>
+          <Link to="/" className="navbar-brand">tlmader</Link>
+          <Navbar.Toggle />
+        </Navbar.Header>
+        <Navbar.Collapse>
+          <Nav>
+            {links.map((link, i) => (
+              <LinkContainer to={link.to} key={i} >
+                <NavItem>{link.label}</NavItem>
+              </LinkContainer>
+            ))}
+          </Nav>
+          <Nav pullRight>
+            {externals.map((external, i) => (
+              <NavLink href={external.to} label={external.label} key={i} />
+            ))}
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+    );
+  }
+}
 
 export default NavbarInstance;
