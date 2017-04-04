@@ -6,6 +6,7 @@ import NavLink from './NavLink';
 
 const links = [
   { to: '/about', label: 'About' },
+  { to: '/music', label: 'Music' },
   { to: '/projects', label: 'Projects' },
   { to: '/photos', label: 'Photos' }
 ];
@@ -20,7 +21,7 @@ export default class NavbarInstance extends Component {
     return (
       <Navbar inverse collapseOnSelect>
         <Navbar.Header>
-          <Link to="/" className="navbar-brand">tlmader</Link>
+          <Link to="/" className="navbar-brand">tlmader.me</Link>
           <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>

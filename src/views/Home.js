@@ -8,6 +8,7 @@ export default class Home extends Component {
         <JumbotronInstance
           header="Hello, world!"
           description="My name is Ted. I live in New Orleans and build software."/>
+
       </div>
     );
   }

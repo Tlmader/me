@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Panel, ListGroup, ListGroupItem } from 'react-bootstrap';
 
-export default class ProjectPanel extends Component {
+export default class InfoPanel extends Component {
 
   render() {
     const title = (
