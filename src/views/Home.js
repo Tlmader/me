@@ -15,12 +15,12 @@ export default class Home extends Component {
           header="Hello, world!"
           description="My name is Ted. I live in New Orleans and build software!"/>
         <Grid>
-          <Col xs={12} md={4}>
+          <Col xs={6} md={3}>
             <Panel>
               <Image src="http://i.imgur.com/mnsLcG1.jpg" responsive />
             </Panel>
           </Col>
-          <Col xs={12} md={8}>
+          <Col xs={12} md={9}>
             <Panel header={header} bsStyle="primary"> I study computer science and game development at the University of New Orleans and develop software for
               GE Digital. PC gaming, electronic music, and men's fashion are my hobbies, and I enjoy discovering places
               and learning new things.</Panel>
