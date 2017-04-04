@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import NavbarInstance from '../components/Navbar';
 
-class MainLayout extends Component {
+export default class MainLayout extends Component {
   render() {
     return (
       <div className="container-fluid">
@@ -13,5 +13,3 @@ class MainLayout extends Component {
     );
   }
 }
-
-export default MainLayout;

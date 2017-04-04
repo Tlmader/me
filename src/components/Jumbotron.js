@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Jumbotron, Grid, Row, Col } from 'react-bootstrap';
 
-class JumbotronInstance extends Component {
+export default class JumbotronInstance extends Component {
   render() {
     return (
       <Jumbotron>
@@ -19,5 +19,3 @@ class JumbotronInstance extends Component {
     );
   }
 }
-
-export default JumbotronInstance;

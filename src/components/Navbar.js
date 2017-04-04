@@ -15,7 +15,7 @@ const externals = [
   { to: 'https://www.linkedin.com/in/tlmader/', label: 'LinkedIn' }
 ];
 
-class NavbarInstance extends Component {
+export default class NavbarInstance extends Component {
   render() {
     return (
       <Navbar inverse collapseOnSelect>
@@ -26,7 +26,7 @@ class NavbarInstance extends Component {
         <Navbar.Collapse>
           <Nav>
             {links.map((link, i) => (
-              <LinkContainer to={link.to} key={i} >
+              <LinkContainer to={link.to} key={i}>
                 <NavItem>{link.label}</NavItem>
               </LinkContainer>
             ))}
@@ -41,5 +41,3 @@ class NavbarInstance extends Component {
     );
   }
 }
-
-export default NavbarInstance;

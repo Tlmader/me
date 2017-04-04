@@ -84,20 +84,18 @@ const projects = [
   },
 ];
 
-class Projects extends Component {
+export default class Projects extends Component {
   render() {
     return (
       <div className="projects-page">
         <JumbotronInstance
-          header="Projects"/>
+          header="Projects" />
         <Grid>
           {projects.map((project, i) => (
-            <ProjectPanel project={project}/>
+            <ProjectPanel project={project} />
           ))}
         </Grid>
       </div>
     );
   }
 }
-
-export default Projects;
